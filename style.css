@@ -1,0 +1,305 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* creating navbar here */
+
+nav{
+    /* display: none; */
+    height: 4vmax;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.377);
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 100;
+}
+
+.right{
+    /* border: 1px solid cadetblue; */
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right > a{
+    font-size: 30px;
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(209, 20, 20);
+    font-family: 'Pacifico', cursive;
+}
+
+.right > a:hover{
+    color: peru;
+}
+.middle{
+    /* border: 1px solid chartreuse; */
+    width: 60%;
+    display: flex;
+    gap: 3px;
+    justify-content: space-evenly;
+}
+
+.middle > a{
+    font-size: 2vmax;
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle > a:hover{
+    border-radius: 3px;
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+
+.left{
+    /* border: 1px solid palevioletred; */
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left > img{
+    border: 1px sold peru;
+    height: 30px;
+}
+
+.left > img:hover{
+    border-bottom: 2px solid crimson;
+    background-color: peachpuff;
+    border-radius: 15px;
+}
+
+/* hero section start here */
+
+.hero{
+    height: 90vh;
+    background-image: linear-gradient(rgba(36,43,55,255), rgba(36,43,55,255));
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+#leftcontainer{
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+#leftcontainer > img{
+    height: 100%;
+    margin-right: 9vmax;
+}
+
+#rightcontainer{
+   color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vmax;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#rightcontainer > h1{
+    font-size: 5vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+#rightcontainer > h2{
+    margin-top: -9%;
+    font-size: 3vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#rightcontainer > p{
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2%;
+}
+#rightcontainer > button{
+    width: 11vmax;
+    padding: 5px;
+    color: wheat;
+    background-color: crimson;
+    border: none;
+    border-radius: 2vmax;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-small;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 2%;
+}
+#rightcontainer > button:hover{
+    border-bottom: 2px solid crimson;
+    background-color: whitesmoke;
+    color: crimson;
+}
+
+/* creating products section */
+
+
+#products > h1{
+    text-align: center;
+    border-bottom: 5px solid crimson;
+    margin: 5vmax auto;
+    font-size: 3vmax;
+    width: 20vw;
+}
+
+.productscontainer{
+    /* border: 1px solid rebeccapurple; */
+    height: 100%;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vmax;
+    margin-top: 1vmax;
+    gap: 5px;
+    margin: auto;
+    justify-content: center;
+}
+
+/* styling 1st product */
+
+.products{
+    cursor: pointer;
+    height: 33vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    border: 3px solid black;
+    margin-top: 1.5vmax;
+}
+.products > img{
+    width: 20vmax;
+}
+
+.products > h4{
+    margin: 12%;
+    font-size: 20px;
+}
+
+.products > h5{
+    margin: 2%;
+    font-size: 20px;
+}
+
+.products:hover{
+    border-bottom: 4px solid crimson;
+    border-radius: 5px ;
+    transform: translateY(-10px);
+}
+
+/* Footer starts here */
+
+footer{
+    color: white;
+    background-color: rgba(22,30,41,255);
+    padding: 2vmax;
+    margin-top: 10vmax;
+    display: flex;
+    align-items: center;
+}
+
+.leftfooter{
+    /* border: 1px solid white; */
+    padding: 5px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftfooter > h4{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+}
+.leftfooter > img{
+    width: 10vmax;
+    cursor: pointer;
+    margin: 1vmax;
+}
+
+.midfooter{
+    /* border: 1px solid white; */
+    padding: 5px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footright{
+    font-size: 4vmax;
+}
+.rightfooter{
+    /* border: 1px solid white; */
+    padding: 5px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightfooter > h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+    font-size: 2vmax;
+}
+
+.rightfooter > a{
+    text-decoration: none;
+    margin: 0.5vmax;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.toggle-button{
+    /* border: 1px solid black; */
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 638px){
+   .middle > a{
+    display: none;
+   }
+   .products>h5{
+    margin: 0%;
+    font-size: 18px;
+   }
+   .right>a{
+    font-size: 20px;
+   }
+   #rightcontainer{
+    display: none;
+   }
+}
